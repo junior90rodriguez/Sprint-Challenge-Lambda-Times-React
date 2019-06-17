@@ -29,9 +29,20 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+    PropTypes are used to make assertions of what type of data a component in React requires to render properly. It is important to type check our data 
+    to make sure we are passing the data we actuially want to pass. It gives us a user error check.
+
 - [ ] Describe a life-cycle event in React?
+    React life-cycle can be thought of as birth/mounting growth/updating and death/unmounting.
+
 - [ ] Explain the details of a Higher Order Component?
+    A HOC is a function that takes a component and returns a new component.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+    Basic CSS: It is its own separate file containing pure styling code.
+    ReactStrap: Uses Bootstrap framework which makes styling as simple as naming a button.
+    Styled-Components: Like inline CSS makes styling simple and doesnt use classes and can be re-used.
+
 
 ## Project Setup
 
