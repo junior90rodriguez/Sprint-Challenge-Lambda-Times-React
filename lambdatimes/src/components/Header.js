@@ -5,12 +5,44 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="header">
-      <span className="date">SMARCH 32, 2018</span>
-      <h1>Lambda Times</h1>
-      <span className="temp">98°</span>
+    <div style={ header }>
+      <span style={ date }>SMARCH 32, 2018</span>
+      <h1 style={ title }>Lambda Times</h1>
+      <span style={ temp }>98°</span>
     </div>
   )
 }
 
+const header = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: '#fff',
+    borderBottom: '1px solid lightgrey',
+    width: '100%',
+    height: '120px',
+    marginTop: '44px',
+    paddingBottom: '15px',
+  }
+
+  const date = {
+    marginLeft: '25px',
+    flex: '1',
+  }
+
+  const title = {
+    fontSize: '60px',
+    fontFamily: 'Didot, serif',
+    fontWeight: 'bold',
+    flex: '8',
+    textAlign: 'center',
+    color: '#000',
+  }
+
+  const temp = {
+    textAlign: 'right',
+    marginRight: '25px',
+    flex: '1',
+  }
 export default Header
